@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
-
+@import url('http://weloveiconfonts.com/api/?family=entypo');
 * {
 	box-sizing: border-box;
 	transition: all ease-in-out 250ms;
 }
+
+#wrapper {
+  width: 350px;
+  height: 50px;
+  margin: 50px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-family: entypo;
+}
+
 
 body {
 	margin: 0;
