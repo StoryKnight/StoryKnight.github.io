@@ -7,16 +7,58 @@
 
 #wrapper {
   width: auto;
-  height: 50px;
-  margin: 50px;
+  height: 0px;
+  position: fixed;
+  bottom: 50%;
+  left: 0;
+  right: 10;
 }
 
 .box {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  background-color: rgba(178,225,102,.75);
   font-family: entypo;
+  font-size: large;
+  text-align: center;
+  padding-top: 5px;
 }
+
+.box:hover {
+  color: #fff;
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+
+#twitter {
+  padding-top: 8px;
+}
+
+#linkedin {
+  padding-top: 7px;
+}
+
+#twitter:hover {
+  box-shadow: inset 0 0 0 22px #3A5795;
+  transform: rotate(360deg) scale(1.15);
+  transition: 1s;
+}
+
+#youtube:hover{
+  box-shadow: inset 0 0 0 22px #bb0000;
+  transform: rotate(360deg) scale(1.15);
+  transition: 1s;
+}
+
+#linkedin:hover{
+  box-shadow: inset 0 0 0 22px #007bb5;
+  transform: rotate(360deg) scale(1.15);
+  transition: 1s;
+
+}
+
 
 
 body {
@@ -250,7 +292,7 @@ nav a:focus {
 =================== */
 
 .home-hero {
-	background-image: image(img/who-we-are.jpg);
+	background-image: url(img/hero-bg.jpg);
 	background-size: cover;
 	background-position: center;
 	padding: 10em 0;
@@ -310,9 +352,11 @@ nav a:focus {
 	}
 
 	.home-about {
-		background-image: url(../img/who-we-are.jpg);
+		background-image: url(img/who-we-are.jpg);
 		background-repeat: no-repeat;
-		padding-bottom: 10em;
+    background-size: cover;
+		padding-bottom: 3em;
+
 	}
 
 	.home-about-textbox {
