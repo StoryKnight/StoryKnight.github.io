@@ -31,6 +31,12 @@
   transition: 1s;
 }
 
+#profile_pic {
+	border: 1px solid #00ff6c;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50%;
+}
 
 #twitter {
   padding-top: 8px;
@@ -65,6 +71,7 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+	background-color: rgb(35,35,35,.8);
 }
 
 img {
@@ -128,6 +135,13 @@ footer::after {
 	.col-1 {
 		width: 16.6666%;
 	}
+
+	.col-4 {
+		width: 33%;
+		padding-top: 1.5em;
+		position: center;
+	}
+
 }
 
 
@@ -314,7 +328,7 @@ nav a:focus {
 	background-color: #232323;
 	padding: 4em;
 	width: 100vw;
-	margin-left: -2.5%;
+	margin-left: -1.5%;
 	outline: 2px solid #00ff6c;
 	outline-offset: -2.5em;
 	color: #FFF;
@@ -352,7 +366,6 @@ nav a:focus {
 	}
 
 	.home-about {
-		background-image: url(img/who-we-are.jpg);
 		background-repeat: no-repeat;
     background-size: cover;
 		padding-bottom: 3em;
@@ -360,13 +373,17 @@ nav a:focus {
 	}
 
 	.home-about-textbox {
-		width: 50%;
+		width: 140%;
 		padding: 7em;
-		outline-offset: -3.75em;
-		margin-left: -2.5%;
+		padding-left: 25%;
+		padding-right: 25%;
+		padding-bottom: 15%;
+		margin-left: -22%;
+		margin-bottom: -6.5em;
+		outline-offset: -5.75em;
 		top: -5em;
-		text-align: left;
-		box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+		text-align: center;
+		box-shadow: 0 0 4em 0 rgba(0,0,0,.75);
 	}
 
 	.home-about-textbox h1 {
@@ -438,15 +455,18 @@ nav a:focus {
 =================== */
 
 .cta {
+	background-image: url(img/who-we-are.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: #00ff6c;
 	padding: 5em 0;
 }
-
 
 /* Footer
 =================== */
 
 footer {
+	padding-bottom: 3em;
 	background: #232323;
 	color: #fff;
 	text-align: left;
